@@ -25,14 +25,38 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+  
+  All of them are array methods. .map returns a new array from performing operations on an array. 
+
+  .filter returns a new array after modifying an array which is getting filtered through conditionals. 
+
+  .reduce turns an array into a single value after performing operations.
+
 
 2. Explain the difference between a callback and a higher order function.
 
+  A callback is a function which is passed as an argument to a higher order function. A higher order function is a function which accepts a function as a parameter and can also return a function. 
+
+
 3. Explain what a closure is.
+
+  Closure is when a variable has access to another variable outside of it's scope. 
+
 
 4. Describe the four principles of the 'this' keyword.
 
+  1) Global scope. When 'this' is used in this context, it refers to the window object in the browser or the gloabl object in node.JS
+
+  2) Implicit binding. When we create a constructor function, 'this' keyword refers to the object being created from the constructor function. When we later reference the object, "object.(method/property)" binds the method/property to the object. 
+
+  3) "new" keyword. When creating a new object, the 'new' keyword binds the new object to the class / constructor function.
+
+  4) Explicit binding. When inheriting methods and properties from parent classes / prototypes, we use explicit binding. ex. "Parent.call(this, childProps)"  
+
+
 5. Why do we need super() in an extended class?
+
+  super() provides methods and properties from parent class to child class. This is how we inherit information through classes.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
