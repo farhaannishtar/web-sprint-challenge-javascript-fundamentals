@@ -13,11 +13,13 @@ function myFunction() {
   }
   nestedFunction();
 }
-myFunction();
+// myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
-
+/*
+  The nestedFunction has access to the internal variable because it is in a lower scope than that variable. 
+  Whatever is in a lower or inside scope of the variables around it, it has access to it. 
+*/
 
 
 
@@ -28,11 +30,14 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation(num) {
   /*Your Code Here*/
-
+  let sum = 0;
+  for(let i = 1; i <= num; i++) {
+    sum += i;
   }
- 
+  return sum;
+}
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -58,6 +63,7 @@ const zooAnimals = [
 
   function animalNames(/*Your Code Here*/){
     /*Your Code Here*/
+    
   }
   
 
