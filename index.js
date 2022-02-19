@@ -209,12 +209,13 @@ const cuboid = new CuboidMaker({
  
 
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
-//🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
+//🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please 
+// rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
 class CuboidMakerTwo {
-  constructor(length, width, height) {
-    this.length = length;
-    this.width = width;
-    this.height = height;
+  constructor(dimensions) {
+    this.length = dimensions.length;
+    this.width = dimensions.width;
+    this.height = dimensions.height;
   }
 
   volume() {
@@ -226,11 +227,11 @@ class CuboidMakerTwo {
   }
 }
 
-const cuboidTwo = new CuboidMakerTwo(4, 5, 5);
+const cuboidTwo = new CuboidMakerTwo({length: 4, width: 5, height: 5});
 console.log(cuboidTwo);
-console.log(cuboidTwo.length);
-console.log(cuboidTwo.width);
-console.log(cuboidTwo.height);
+console.log('cuboidTwo.length', cuboidTwo.length);
+console.log('cuboidTwo.width', cuboidTwo.width);
+console.log('cuboidTwo.height', cuboidTwo.height);
 
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
@@ -246,7 +247,7 @@ console.log(cuboidTwo.height);
 
   /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
   function foo(){
-    console.log('its working');
+    // console.log('its working');
     return 'bar';
   }
   foo();
